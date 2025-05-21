@@ -78,13 +78,15 @@ http://localhost:8080/swagger-ui.html
 
 ## API Usage
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/api/borrowers` | POST | Register a new borrower |
-| `/api/books` | POST | Register a new book copy |
-| `/api/books` | GET | List all books |
-| `/api/books/{bookId}/borrow/{borrowerId}` | POST | Borrow a specific book copy |
-| `/api/books/{bookId}/return/{borrowerId}` | POST | Return a borrowed book |
+| Endpoint                                  | Method | Description                 |
+|-------------------------------------------|--------|-----------------------------|
+| `/api/borrowers`                          | GET    | List all borrowers          |
+| `/api/borrowers`                          | POST   | Register a new borrower     |
+| `/api/borrowers/{borrowerId}`             | GET    | Get spesific borrower       |
+| `/api/books`                              | POST   | Register a new book copy    |
+| `/api/books`                              | GET    | List all books              |
+| `/api/books/{bookId}/borrow/{borrowerId}` | POST   | Borrow a specific book copy |
+| `/api/books/{bookId}/return/{borrowerId}` | POST   | Return a borrowed book      |
 
 ---
 
