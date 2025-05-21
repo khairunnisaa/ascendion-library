@@ -26,7 +26,7 @@ This is a simple RESTful API built with **Java 17** and **Spring Boot** to manag
 
 ---
 
-## ⚙Configuration
+## Configuration
 
 You can configure the application via `application.properties` or environment variables.
 
