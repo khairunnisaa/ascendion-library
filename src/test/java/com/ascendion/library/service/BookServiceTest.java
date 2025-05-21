@@ -1,12 +1,10 @@
-package com.ascendion.library;
+package com.ascendion.library.service;
 
 import com.ascendion.library.entity.Book;
 import com.ascendion.library.entity.Borrower;
 import com.ascendion.library.exception.BookAlreadyBorrowedException;
 import com.ascendion.library.exception.ResourceNotFoundException;
 import com.ascendion.library.repository.BookRepository;
-import com.ascendion.library.service.BookService;
-import com.ascendion.library.service.BorrowerService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

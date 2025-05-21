@@ -1,12 +1,10 @@
-package com.ascendion.library;
+package com.ascendion.library.service;
 
 import com.ascendion.library.entity.Borrower;
 import com.ascendion.library.exception.ResourceAlreadyExistsException;
 import com.ascendion.library.repository.BorrowerRepository;
-import com.ascendion.library.service.BorrowerService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import java.util.Optional;
 

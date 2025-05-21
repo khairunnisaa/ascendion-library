@@ -1,4 +1,7 @@
 package com.ascendion.library.exception;
 
-public class BookAlreadyBorrowedException {
+public class BookAlreadyBorrowedException extends RuntimeException {
+    public BookAlreadyBorrowedException(String message) {
+        super(message);
+    }
 }
