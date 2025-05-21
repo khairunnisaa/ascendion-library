@@ -76,7 +76,7 @@ http://localhost:8080/swagger-ui.html
 
 ---
 
-## 📡 API Usage
+## API Usage
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
@@ -194,6 +194,3 @@ mvn test
 
 ---
 
-## 🤝 Contact & Contribution
-
-Found a bug? Want to contribute? Please open an issue or a pull request on GitHub.
