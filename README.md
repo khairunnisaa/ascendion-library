@@ -1,21 +1,21 @@
-# 📚 Ascendion Library REST API
+# Ascendion Library REST API
 
-## 🚀 Overview
+## Overview
 
 This is a simple RESTful API built with **Java 17** and **Spring Boot** to manage a library. It provides endpoints for registering borrowers and books, borrowing and returning books, and viewing all available books.
 
 ### Key Highlights
 
-- 📖 Multiple copies of the same ISBN can be registered with unique IDs.
-- 🔐 Only one borrower can borrow a given book copy at a time.
-- ✅ Clear validation and centralized error handling.
-- 📘 Auto-generated Swagger UI documentation.
-- 🐳 Container-ready for Docker and Kubernetes deployment.
-- ☁️ Adheres to key [Twelve-Factor App](https://12factor.net/) principles.
+- Multiple copies of the same ISBN can be registered with unique IDs.
+- Only one borrower can borrow a given book copy at a time.
+- Clear validation and centralized error handling.
+- Auto-generated Swagger UI documentation.
+- Container-ready for Docker and Kubernetes deployment.
+- ☁Adheres to key [Twelve-Factor App](https://12factor.net/) principles.
 
 ---
 
-## ✨ Features
+## Features
 
 - Register borrowers with unique emails.
 - Register multiple copies of books (even with the same ISBN).
@@ -48,7 +48,13 @@ server.port=8080
 
 ---
 
-## 🏗️ Build and Run Locally
+## Build and Run Locally
+
+### Rub with Maven:
+
+```bash
+mvn spring-boot:run
+```
 
 ### Build with Maven:
 
@@ -82,7 +88,7 @@ http://localhost:8080/swagger-ui.html
 
 ---
 
-## 📬 Example Requests
+## Example Requests
 
 ### ➕ Register Borrower
 
@@ -91,12 +97,12 @@ POST /api/borrowers
 Content-Type: application/json
 
 {
-  "name": "Alice Johnson",
-  "email": "alice@example.com"
+  "name": "Khairunnisa",
+  "email": "khairunnisa@ascendion.com"
 }
 ```
 
-### ➕ Register Book
+### Register Book
 
 ```http
 POST /api/books
@@ -105,11 +111,11 @@ Content-Type: application/json
 {
   "isbn": "9780132350884",
   "title": "Clean Code",
-  "author": "Robert C. Martin"
+  "author": "Khairunnisa"
 }
 ```
 
-### 📥 Borrow Book
+### Borrow Book
 
 ```http
 POST /api/books/1/borrow/1
@@ -117,7 +123,7 @@ POST /api/books/1/borrow/1
 
 ---
 
-## ❗ Error Handling
+## Error Handling
 
 - **400 Bad Request**: Invalid data, already borrowed book, etc.
 - **404 Not Found**: Book or borrower not found.
@@ -134,7 +140,7 @@ POST /api/books/1/borrow/1
 
 ---
 
-## 🧠 Assumptions
+## Assumptions
 
 - Each physical book copy has a unique ID.
 - Books with the same ISBN have the same title and author.
@@ -146,7 +152,7 @@ POST /api/books/1/borrow/1
 
 ---
 
-## 🐳 Docker Usage
+## Docker Usage
 
 ### Build Docker image:
 
@@ -166,7 +172,7 @@ docker run -p 8080:8080 \
 
 ---
 
-## 🧩 Twelve-Factor App Compliance
+## Twelve-Factor App Compliance
 
 This application:
 
@@ -178,7 +184,7 @@ This application:
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Run unit and integration tests using:
 
